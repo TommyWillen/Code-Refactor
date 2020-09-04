@@ -8,31 +8,38 @@ body {
   background-color: #d9dcd6;
 }
 
-/* changed .header to header to match semantic HTML changes and remove redundancy */
+/* changed .header to header to match semantic HTML changes and remove redundancy; modified padding to fix changes made my meyer reset */
 header {
-  padding: 20px;
+  padding: 23px 20px 24px 20px;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
   background-color: #2a607c;
   color: #ffffff;
+  border: medium none #2a607c;
 }
 
+/* added font weight and modfied position to fix changes made my meyer reset */
 header h1 {
   display: inline-block;
   font-size: 48px;
+  font-weight: 700;
+  position: relative;
+  top: 1px;
 }
 
 header h1 .seo {
   color: #d9dcd6;
 }
 
-/* change div to nav to match semantic html changes */
+/* change div to nav to match semantic html changes and modfied position to fix changes made my meyer reset */
 header nav {
   padding-top: 15px;
   margin-right: 20px;
   float: right;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-size: 20px;
+  position: relative;
+  top: -1px;
 }
 
 header nav ul {
@@ -57,6 +64,7 @@ p {
   height: 800px;
   width: 100%;
   margin-bottom: 25px;
+  background-image: url("../images/digital-marketing-meeting.jpg");
   background-size: cover;
   background-position: center;
 }
@@ -78,7 +86,8 @@ main {
   margin-left: 20px;
 }
 
-.benefits {
+/* changed to aside to clean up html code and match the semantic changes there and added line-height normal to fix changes made by meyer reset*/
+aside {
   margin-right: 20px;
   padding: 20px;
   clear: both;
@@ -87,57 +96,32 @@ main {
   height: 100%;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   background-color: #2589bd;
+  line-height: normal;
 }
 
-.benefit-lead {
+/* merged .benefit-lead, .benefit-brand, and .benefit-cost and changed it to a figure tag to clean up the css and to make it more semantic */
+figure {
   margin-bottom: 32px;
   color: #ffffff;
 }
 
-.benefit-brand {
-  margin-bottom: 32px;
-  color: #ffffff;
-}
-
-.benefit-cost {
-  margin-bottom: 32px;
-  color: #ffffff;
-}
-
-.benefit-lead h3 {
+/* merged .benefit-lead h3, .benefit-brand h3, and .benefit-cost h3, and changed it to figure h3 to clean up the css and make it more semantic 
+added font weight to fix changes made by meyer reset*/
+figure h3 {
   margin-bottom: 10px;
   text-align: center;
+  font-weight: 700;
+  font-size: 1.17em;
 }
 
-.benefit-brand h3 {
-  margin-bottom: 10px;
-  text-align: center;
-}
-
-.benefit-cost h3 {
-  margin-bottom: 10px;
-  text-align: center;
-}
-
-.benefit-lead img {
+/* merged .benefit-lead img, .benefit-brand img, and .benefit-cost img, and changed it to figure img to clean up the css and make it more semantic */
+figure img {
   display: block;
   margin: 10px auto;
   max-width: 150px;
 }
 
-.benefit-brand img {
-  display: block;
-  margin: 10px auto;
-  max-width: 150px;
-}
-
-.benefit-cost img {
-  display: block;
-  margin: 10px auto;
-  max-width: 150px;
-}
-
-/* removed the three classes and changed it to article to match html and remove redundancy*/
+/* removed the three classes and changed it to article to match html and remove redundancy and added line-height normal to fix changes made by meyer reset */
 article {
   margin-bottom: 20px;
   padding: 50px;
@@ -145,6 +129,7 @@ article {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   background-color: #0072bb;
   color: #ffffff;
+  line-height: normal;
 }
 
 /* removed the three classes and changed it to article img to fix the redundancy*/
@@ -152,29 +137,26 @@ article img {
   max-height: 200px;
 }
 
-.search-engine-optimization h2 {
+/* removed the three classes and changed it to article h2 to fix the redundancy
+added font weight to fix changes made by meyer reset*/
+article h2 {
   margin-bottom: 20px;
   font-size: 36px;
+  font-weight: 700;
 }
 
-.online-reputation-management h2 {
-  margin-bottom: 20px;
-  font-size: 36px;
-}
-
-.social-media-marketing h2 {
-  margin-bottom: 20px;
-  font-size: 36px;
-}
-
-.footer {
+/* change .footer class to footer tag to mirror changes made to html */
+footer {
   padding: 30px;
   clear: both;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
   text-align: center;
+  line-height: normal;
 }
 
-.footer h2 {
+/* changed .footer class to footer tag to mirror changes to html and added font weight to fix changes made by meyer reset*/
+footer h2 {
   font-size: 20px;
+  font-weight: 700;
 }
